@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set the branch you want to trigger the workflow
+      - main  # Change this to your default branch if different
 
 jobs:
   build-and-deploy:
@@ -18,17 +18,20 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Navigate to portfolio directory & install
-        run: cd portfolio && npm install
+      - name: Navigate to portfolio directory
+        run: cd portfolio
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./portfolio
 
       - name: Build the project
         run: npm run build
+        working-directory: ./portfolio
 
       - name: Export the project
         run: npm run export
+        working-directory: ./portfolio
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
