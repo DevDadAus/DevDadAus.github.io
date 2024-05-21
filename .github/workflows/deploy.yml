@@ -29,9 +29,5 @@ jobs:
         run: npm run build
         working-directory: ./portfolio
 
-      - name: Export the project
-        run: npm run export
-        working-directory: ./portfolio
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
