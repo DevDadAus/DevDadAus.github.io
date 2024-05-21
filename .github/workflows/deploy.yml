@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Navigate to portfolio directory
-        run: cd portfolio
+      - name: Navigate to portfolio directory & install
+        run: cd portfolio && npm install
 
       - name: Install dependencies
         run: npm install
