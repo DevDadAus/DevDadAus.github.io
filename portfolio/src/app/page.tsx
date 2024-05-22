@@ -7,7 +7,7 @@ export default function Home() {
           <div className="font-serif text-gray-200 text-5xl">Austin Keisling.</div>
           <div className="font-serif text-gray-400 text-5xl">I build things for the web.</div>
           <div className="font-sans text-gray-500 text-base w-2/3">
-            I'm a software engineer based out of Surf City, NC specializing in building exceptional web applications, DevOps, and everything in between.
+            I&apos;m a software engineer based out of Surf City, NC specializing in building exceptional web applications, DevOps, and everything in between.
           </div>
         </div>
       </div>
